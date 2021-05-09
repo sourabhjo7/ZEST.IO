@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta Declaration-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Balsamiq+Sans:wght@700&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+        <!--Bootstrap CDN-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        crossorigin="anonymous" />
+
+        <!--Local Style-->
+        <link rel="stylesheet" href="static/styles/header.css">
+        <link rel="stylesheet" href="static/styles/loader.css">
+        <link rel="stylesheet" href="static/styles/default.css">
+
+
+        <title>ZEST.IO</title>
+
+    </head>
+<body>
+
+    <!--Loader-->
+     <section class="loader">
+         <div class="spinner"></div>
+         <p>Loading...</p>
+     </section>
+
+     <!--Header with navBar-->
+     <header>
+         <h1>ZEST.IO</h1>
+         <div class="navBtn">
+             <a href="/">Home</a>
+         </div>
+     </header>
+
+
+    <div class="conRes">
+        <h2>Result</h2>
+
+        <div class="resCon">
+            <p>Your Score: {{score}}</p>
+            <p>Penalty: {{penalty}}</p>
+            <p>Total Score: {{total}}</p>
+        </div>
+    </div>
+
+
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="static/scripts/header.js"></script>
+    <script type="text/javascript" src="static/scripts/loader.js"></script>
+</body>
+</html> 

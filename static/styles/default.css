@@ -1,0 +1,99 @@
+/* Default Code */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #444;
+}
+
+
+p {
+    font-family: 'Averia Serif Libre', cursive;
+    color: rgb(152, 151, 151);
+    line-height: 1.5;
+}
+
+/* Styling of the Loader */
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FBFBFB;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #004EFF;
+  border-bottom: 12px solid #004EFF;
+  width: 90px;
+  height: 90px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.loader p{
+  font-size: 2rem;
+  color: #004EFF;
+  margin-top: 20px;
+}
+/* KeyFrames for loader spiner*/
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.conIndex, .conRes{
+    padding: 0 5% 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+.conIndex h3{
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 2vh;
+}
+.conIndex h4{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5vh;
+}
+.conIndex img{
+    width: 75%;
+    margin: auto;
+}
+
+.conRes{
+    margin-top: 15vh;
+}
+.conRes h2{
+    font-size: 4rem;
+}
+.resCon{
+    margin: 3vh 0 0;
+}
+
+.resCon p{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
